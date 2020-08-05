@@ -1,0 +1,60 @@
+GET http://localhost:3000/users?skip=5&limit=5
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMiIsImlhdCI6MTU5NjYzMzI0NH0.FkRwKU1xr0Am7NhaByr21KbaKdbS3Gi75om2vZh_Pc0
+
+###
+
+POST http://localhost:3000/users
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMiIsImlhdCI6MTU5NjYzMzI0NH0.FkRwKU1xr0Am7NhaByr21KbaKdbS3Gi75om2vZh_Pc0
+Content-Type: application/json
+
+{
+    "name": "name 5",
+    "suspend": true
+}
+
+
+###
+
+GET http://localhost:3000/users/5f2ab6599921d70a5d3aede9
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMiIsImlhdCI6MTU5NjYzMzI0NH0.FkRwKU1xr0Am7NhaByr21KbaKdbS3Gi75om2vZh_Pc0
+
+###
+
+DELETE http://localhost:3000/users/5f2a9bb23382c205be31db91
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMiIsImlhdCI6MTU5NjYzMzI0NH0.FkRwKU1xr0Am7NhaByr21KbaKdbS3Gi75om2vZh_Pc0
+###
+
+PATCH http://localhost:3000/users/5f2ab6599921d70a5d3aede9
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMiIsImlhdCI6MTU5NjYzMzI0NH0.FkRwKU1xr0Am7NhaByr21KbaKdbS3Gi75om2vZh_Pc0
+Content-Type: application/json
+
+{
+    "suspend":false
+}
+
+###
+DELETE http://localhost:3000/users/deleteAll
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMiIsImlhdCI6MTU5NjYzMzI0NH0.FkRwKU1xr0Am7NhaByr21KbaKdbS3Gi75om2vZh_Pc0
+
+###
+POST http://localhost:3000/login/register
+Content-Type: application/json
+
+{
+    "name": "Admin2",
+    "username": "username2",
+    "pass": "pass2"
+}
+
+###
+GET http://localhost:3000/login/allAdmin
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "username2",
+    "pass": "pass2"
+}
+
