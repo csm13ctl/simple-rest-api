@@ -2,7 +2,8 @@
 
 
 ### ENV Variables: 
-DATABASE_CONNECTION=mongodb://localhost/Users 
+DATABASE_CONNECTION=mongodb://localhost/Users
+
 SECRET_KEY=s3cr3tk3y
 
 ### 
